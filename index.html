@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3</title>
+    <!--Adding bootstrap for formatting-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Adding mapbox to embed my map-->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br>
+    <!--Adding a header for the site-->
+    <h1 class="text-center">Resume: Charlotte Kafka-Gibbons</h1>
+    <br>
+    <!--Adding a navbar using bootstrap to have separate web map and portfolio pages-->
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" id="WebM" aria-current="page" href="#">Experience Web Map</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="Port" href="#">Portfolio-placeholder tab will be completed later</a>
+        </li>
+    </ul>
+    <!--Adding tab content-->
+    <div class="tab-content" id="ex1-content">
+        <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+            <div id="map"></div>
+            <!--Creating a button to fly from experience to experience-->
+            <div id="my-map" class="map-container"></div>
+            <button id="exp-button">Click to explore my experiences!</button>
+        </div>
+        <!--Creating a button to zoom to full extent-->
+        <button id="fullextent-button">Zoom to Full Extent</button>
+        <!--Adding pop-ups for the resume points-->
+
+        <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+            Tab 2 content
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

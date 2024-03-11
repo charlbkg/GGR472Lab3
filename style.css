@@ -1,0 +1,16 @@
+/*Positioning map on tab 1*/
+.map-container {
+    position: absolute;
+    top: 17em;
+    bottom: 0;
+    width: 100%;
+}
+/*Styling for popups*/
+.mapboxgl-popup {
+    max-width: 400px;
+    font:
+        12px/20px 'Helvetica Neue',
+        Arial,
+        Helvetica,
+        sans-serif;
+}
