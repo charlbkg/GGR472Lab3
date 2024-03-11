@@ -32,18 +32,19 @@
     <div class="tab-content" id="ex1-content">
         <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
             <div id="map"></div>
-            <!--Creating a button to fly from experience to experience-->
             <div id="my-map" class="map-container"></div>
-            <button id="exp-button">Click to explore my experiences!</button>
+            <div class="btn-group-vertical">
+                <!--Creating a button to fly from experience to experience-->
+                <button class="expbut" id="exp-button">Click to explore my experiences!</button>
+                <!--Creating a button to zoom to full extent-->
+                <button class="zoombut" id="fullextent-button">Zoom to Full Extent</button>
+            </div>
         </div>
-        <!--Creating a button to zoom to full extent-->
-        <button id="fullextent-button">Zoom to Full Extent</button>
+
         <!--Adding pop-ups for the resume points-->
-
-        <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
-            Tab 2 content
-
-        </div>
+    </div>
+    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+        Tab 2 content
     </div>
     <script src="script.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

@@ -13,19 +13,22 @@ map.addControl(new mapboxgl.FullscreenControl(), 'bottom-left');
 map.on('load', () => {
     map.addSource('places', {
         'type': 'geojson',
-        'data': 'Resume.geojson'
+        'data': 'https://raw.githubusercontent.com/charlbkg/GGR472Lab3/main/Resume.geojson'
     }
     );
     // Add a layer showing the places.
+    // I wanted to keep the symbology from my mapbox style containing a tileset of the resume geoJSON,
+    //but still add the popup functionality. So I loaded the same data for the tileset at a geoJSON and 
+    //made the points transparent. This way the symbology of the style shows, and the pop-up still works.
     map.addLayer({
         'id': 'places-points',
         'type': 'circle',
         'source': 'places',
         'paint': {
-            'circle-color': '#4264fb',
-            'circle-radius': 6,
+            'circle-color': 'transparent',
+            'circle-radius': 20,
             'circle-stroke-width': 2,
-            'circle-stroke-color': '#ffffff'
+            'circle-stroke-color': 'transparent'
         }
     });
 
@@ -40,7 +43,7 @@ map.on('mouseenter', 'places-points', (e) => {
 
     // Copy coordinates array.
     const coordinates = e.features[0].geometry.coordinates.slice();
-    const description = e.features[0].properties.description;
+    const description = e.features[0].properties.Description;
     console.log(coordinates)
     // Ensure that if the map is zoomed out such that multiple
     // copies of the feature are visible, the popup appears
@@ -59,38 +62,6 @@ map.on('mouseleave', 'places-points', () => {
     map.getCanvas().style.cursor = '';
     popup.remove();
 });
-
-//     map.on('click', (e) => {
-//         // Change the cursor style as a UI indicator.
-//         map.getCanvas().style.cursor = 'pointer';
-
-//         // Copy coordinates array.
-//         const coordinates = e.features[0].geometry.coordinates.slice();
-//         const description = e.features[0].properties.description;
-
-//         console.log(coordinates)
-//         // Ensure that if the map is zoomed out such that multiple
-//         // copies of the feature are visible, the popup appears
-//         // over the copy being pointed to.
-//         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-//             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-//         }
-//     // Create a popup, but don't add it to the map yet.
-//     const popup = new mapboxgl.Popup({
-//         closeButton: false,
-//         closeOnClick: false
-//     });
-//         // Populate the popup and set its coordinates
-//         // based on the feature found.
-//         popup.setLngLat(coordinates).setHTML(description).addTo(map);
-//     });
-
-
-// });
-// map.on('mouseleave', 'places-points', () => {
-//     map.getCanvas().style.cursor = '';
-//     popup.remove();
-// });
 
 //Add event listener which flys to the location of different experiences in order, based on start date
 // Declare array with different locations

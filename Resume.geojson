@@ -1,1 +1,215 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"Name":"University of Toronto","ExperienceType":"Education","Description":"This is where I am currently completing my undergraduate degree. ","Year":"2019-2024"},"geometry":{"coordinates":[-79.39512071987686,43.66180471069458],"type":"Point"},"id":0},{"type":"Feature","properties":{"Name":"Somerville High School","ExperienceType":"Education","Description":"This is where I completed my high school education. ","Year":"2015-2019"},"geometry":{"coordinates":[-71.09647636158911,42.386864529111335],"type":"Point"},"id":1},{"type":"Feature","properties":{"Name":"Research Assistant, Urban Genome Project","ExperienceType":"Job","Description":"Work-study position through Daniel's at UofT. Mixed-method sociological research on invasive species management and conceptualization at the municipal level.","Year":"2023-Present"},"geometry":{"coordinates":[-79.40070651220746,43.65966022937468],"type":"Point"}},{"type":"Feature","properties":{"Name":"ESRI Canada Student Associate","ExperienceType":"Education","Description":"Student program through ESRI Canada focused on developing GIS skills and networking. ","Year":"2023-Present"},"geometry":{"coordinates":[-79.39863470124627,43.662382585035175],"type":"Point"}},{"type":"Feature","properties":{"ExperienceType":"Job","Description":"Background research and data collection supporting political economy research on organic wine production, wine cooperatives in Southern France, and the progression of EU wine and agricultural policies.","Name":"Research Assistant, Scott Prudham","Year":2022},"geometry":{"coordinates":[-79.39875551979807,43.66277746373467],"type":"Point"}},{"type":"Feature","properties":{"Name":"Rustle and Still (Line Cook / Barista)","ExperienceType":"Job","Description":"Serve customers both through kitchen work as a line cook and front-of-house barista duties.","Year":"2022-Present"},"geometry":{"coordinates":[-79.41309927116498,43.664730119422074],"type":"Point"}},{"type":"Feature","properties":{"Name":"Goldstruck (Barista)","ExperienceType":"Job","Description":"Serve coffee and espresso drinks. Trained in barista skills.","Year":"2021-2022"},"geometry":{"coordinates":[-79.3921882711636,43.670059880233595],"type":"Point"}},{"type":"Feature","properties":{"Name":"CADC (Political canvassing)","ExperienceType":"Job","Description":"Data collection and political canvassing in relation to the November 2020 presidential and senatorial election.","Year":2020},"geometry":{"coordinates":[-110.97512919151158,32.21924161935728],"type":"Point"}},{"type":"Feature","properties":{"Name":"Sarma (Prep Cook)","ExperienceType":"Job","Description":"Operate as a team member in the professional kitchen environment in one of Boston’s top fine-dining restaurants.","Year":"2018-2019"},"geometry":{"coordinates":[-71.09546999999995,42.388181492342085],"type":"Point"}},{"type":"Feature","properties":{"Name":"BioSeq (Lab Assistant)","ExperienceType":"Job","Description":"Assist in designing experiments relating to bioinformatics and next-generation sequencing.","Year":"2017-2018"},"geometry":{"coordinates":[-71.12045953716331,42.40485109652886],"type":"Point"}},{"type":"Feature","properties":{"Name":"UofT Emergency Food Bank (Organizer)","ExperienceType":"Volunteer","Description":"Aid in supplying UofT community in response to the cessation of campus food bank programming during the COVID-19 pandemic. ","Year":"2021-2022"},"geometry":{"coordinates":[-79.39688282455593,43.658962367110036],"type":"Point"}},{"type":"Feature","properties":{"Name":"Bikechain (Volunteer)","ExperienceType":"Volunteer","Description":"Learn bicycle repair and maintenance. ","Year":"2021-Present"},"geometry":{"coordinates":[-79.39815458788371,43.658690449249775],"type":"Point"}},{"type":"Feature","properties":{"Name":"Community Fridges Toronto (Volunteer)","ExperienceType":"Volunteer","Year":2021,"Description":"Weekly fridge cleaning and maintenance."},"geometry":{"coordinates":[-79.41101088192067,43.651410286301285],"type":"Point"}}]}
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "University of Toronto",
+                "ExperienceType": "Education",
+                "Description": "This is where I am currently completing my undergraduate degree. ",
+                "Year": "2019-2024"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39512071987686,
+                    43.66180471069458
+                ],
+                "type": "Point"
+            },
+            "id": 0
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Somerville High School",
+                "ExperienceType": "Education",
+                "Description": "This is where I completed my high school education. ",
+                "Year": "2015-2019"
+            },
+            "geometry": {
+                "coordinates": [
+                    -71.09647636158911,
+                    42.386864529111335
+                ],
+                "type": "Point"
+            },
+            "id": 1
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Research Assistant, Urban Genome Project",
+                "ExperienceType": "Job",
+                "Description": "Work-study position through Daniel's at UofT. Mixed-method sociological research on invasive species management and conceptualization at the municipal level.",
+                "Year": "2023-Present"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.40070651220746,
+                    43.65966022937468
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "ESRI Canada Student Associate",
+                "ExperienceType": "Education",
+                "Description": "Student program through ESRI Canada focused on developing GIS skills and networking. ",
+                "Year": "2023-Present"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39863470124627,
+                    43.662382585035175
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ExperienceType": "Job",
+                "Description": "Background research and data collection supporting political economy research on organic wine production, wine cooperatives in Southern France, and the progression of EU wine and agricultural policies.",
+                "Name": "Research Assistant, Scott Prudham",
+                "Year": 2022
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39875551979807,
+                    43.66277746373467
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Rustle and Still (Line Cook / Barista)",
+                "ExperienceType": "Job",
+                "Description": "Serve customers both through kitchen work as a line cook and front-of-house barista duties.",
+                "Year": "2022-Present"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.41309927116498,
+                    43.664730119422074
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Goldstruck (Barista)",
+                "ExperienceType": "Job",
+                "Description": "Serve coffee and espresso drinks. Trained in barista skills.",
+                "Year": "2021-2022"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.3921882711636,
+                    43.670059880233595
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "CADC (Political canvassing)",
+                "ExperienceType": "Job",
+                "Description": "Data collection and political canvassing in relation to the November 2020 presidential and senatorial election.",
+                "Year": 2020
+            },
+            "geometry": {
+                "coordinates": [
+                    -110.97512919151158,
+                    32.21924161935728
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Sarma (Prep Cook)",
+                "ExperienceType": "Job",
+                "Description": "Operate as a team member in the professional kitchen environment in one of Boston’s top fine-dining restaurants.",
+                "Year": "2018-2019"
+            },
+            "geometry": {
+                "coordinates": [
+                    -71.09546999999995,
+                    42.388181492342085
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "BioSeq (Lab Assistant)",
+                "ExperienceType": "Job",
+                "Description": "Assist in designing experiments relating to bioinformatics and next-generation sequencing.",
+                "Year": "2017-2018"
+            },
+            "geometry": {
+                "coordinates": [
+                    -71.12045953716331,
+                    42.40485109652886
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "UofT Emergency Food Bank (Organizer)",
+                "ExperienceType": "Volunteer",
+                "Description": "Aid in supplying UofT community in response to the cessation of campus food bank programming during the COVID-19 pandemic. ",
+                "Year": "2021-2022"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39688282455593,
+                    43.658962367110036
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Bikechain (Volunteer)",
+                "ExperienceType": "Volunteer",
+                "Description": "Learn bicycle repair and maintenance. ",
+                "Year": "2021-Present"
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.39815458788371,
+                    43.658690449249775
+                ],
+                "type": "Point"
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "Name": "Community Fridges Toronto (Volunteer)",
+                "ExperienceType": "Volunteer",
+                "Year": 2021,
+                "Description": "Weekly fridge cleaning and maintenance."
+            },
+            "geometry": {
+                "coordinates": [
+                    -79.41101088192067,
+                    43.651410286301285
+                ],
+                "type": "Point"
+            }
+        }
+    ]
+}
