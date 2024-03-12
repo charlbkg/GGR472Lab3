@@ -31,7 +31,6 @@ map.on('load', () => {
             'circle-stroke-color': 'transparent'
         }
     });
-
 });
 // Create a popup, but don't add it to the map yet.
 const popup = new mapboxgl.Popup({
@@ -51,8 +50,6 @@ map.on('mouseenter', 'places-points', (e) => {
     while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
         coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
     }
-
-
     // Populate the popup and set its coordinates
     // based on the feature found.
     popup.setLngLat(coordinates).setHTML(description).addTo(map);
@@ -62,7 +59,6 @@ map.on('mouseleave', 'places-points', () => {
     map.getCanvas().style.cursor = '';
     popup.remove();
 });
-
 //Add event listener which flys to the location of different experiences in order, based on start date
 // Declare array with different locations
 var idx = 0;
@@ -79,9 +75,9 @@ var arrayOfCoordinates = [
     [-110.97512919151158,
         32.21924161935728],
     [-79.41101088192067,
-        43.651410286301285]
+        43.651410286301285],
     [-79.3921882711636,
-    43.670059880233595],
+        43.670059880233595],
     [-79.39688282455593,
         43.658962367110036],
     [-79.39875551979807,
@@ -118,5 +114,32 @@ document.getElementById("fullextent-button").addEventListener('click', () => {
         essential: true
     });
 });
+//Adding data for state/province polygon layer
+map.on('load', () => {
+    map.addSource('prov-state', {
+        'type': 'geojson',
+        'data': 'https://raw.githubusercontent.com/charlbkg/GGR472Lab3/main/state-prov.geojson'
+    }
+    );
+    // Add a layer showing the provinces/states I've lived in
+    // Added a stepped expression to classify based on number of years I lived there
+    map.addLayer({
+        'id': 'prov-state',
+        'type': 'fill',
+        'source': 'prov-state',
+        'minzoom': 0, //set zoom levels so these layers only appear at a zoomed out extent
+        'maxzoom': 7, //this removes the layer when looking at individual points
+        'paint': {
+            'fill-color': [
+                'step', // STEP expression produces stepped results based on value pairs
+                ['get', 'Years-Livd'], // GET expression retrieves property value from 'capacity' data field
+                '#c6cbf8', // Colour assigned to any values < first step
+                2, '#4f57f8', // Colours assigned to values >= each step
+                6, '#001aff',
+            ],
+            'fill-opacity': 0.8,
+            'fill-outline-color': 'white'
+        },
+    });
 
-
+});
