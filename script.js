@@ -135,9 +135,9 @@ map.on('load', () => {
                 ['get', 'Years-Livd'], // GET expression retrieves property value from 'capacity' data field
                 '#c6cbf8', // Colour assigned to any values < first step
                 2, '#4f57f8', // Colours assigned to values >= each step
-                6, '#001aff',
+                6, '#1e00ff',
             ],
-            'fill-opacity': 0.8,
+            'fill-opacity': 0.9,
             'fill-outline-color': 'white'
         },
     });
