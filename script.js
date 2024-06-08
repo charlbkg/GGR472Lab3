@@ -13,7 +13,7 @@ map.addControl(new mapboxgl.FullscreenControl(), 'bottom-left');
 map.on('load', () => {
     map.addSource('places', {
         'type': 'geojson',
-        'data': 'https://raw.githubusercontent.com/charlbkg/GGR472Lab3/main/Resume.geojson'
+        'data': 'https://raw.githubusercontent.com/charlbkg/GGR472Lab3/main/Resume2.geojson'
     }
     );
     // Add a layer showing the places.
@@ -70,6 +70,8 @@ var arrayOfCoordinates = [
         42.40485109652886],
     [-71.09546999999995,
         42.388181492342085],
+    [-71.12707925158851,
+        42.40317333100227],
     [-79.39512071987686,
         43.66180471069458],
     [-110.97512919151158,
@@ -80,16 +82,18 @@ var arrayOfCoordinates = [
         43.670059880233595],
     [-79.39688282455593,
         43.658962367110036],
-    [-79.39875551979807,
-        43.66277746373467],
     [-79.39815458788371,
         43.658690449249775],
+    [-79.39875551979807,
+        43.66277746373467],
     [-79.41309927116498,
         43.664730119422074],
-    [-79.40070651220746,
-        43.65966022937468],
+    [-79.4055890313981,
+        43.65221469777589],
     [-79.39863470124627,
-        43.662382585035175]
+        43.662382585035175],
+    [-79.40070651220746,
+        43.65966022937468]
 ];
 //Create event listener to fly to location when the button is clicked, and function that cycles through each point
 document.getElementById('exp-button').addEventListener('click', function () {
@@ -99,47 +103,62 @@ document.getElementById('exp-button').addEventListener('click', function () {
     }
 
     map.flyTo({
-        zoom: 17,
+        zoom: 16.25,
         center: arrayOfCoordinates[idx],
     });
 
     idx++;
 });
-// Add event listener which allows the sute user to zoom to the full extent at any time
-document.getElementById("fullextent-button").addEventListener('click', () => {
-    map.flyTo({
-        center: [-93.42314489540314,
-            39.25359819924685],
-        zoom: 4,
-        essential: true
-    });
-});
-//Adding data for state/province polygon layer
-map.on('load', () => {
-    map.addSource('prov-state', {
-        'type': 'geojson',
-        'data': 'https://raw.githubusercontent.com/charlbkg/GGR472Lab3/main/state-prov.geojson'
-    }
-    );
-    // Add a layer showing the provinces/states I've lived in
-    // Added a stepped expression to classify based on number of years I lived there
-    map.addLayer({
-        'id': 'prov-state',
-        'type': 'fill',
-        'source': 'prov-state',
-        'minzoom': 0, //set zoom levels so these layers only appear at a zoomed out extent
-        'maxzoom': 7, //this removes the layer when looking at individual points
-        'paint': {
-            'fill-color': [
-                'step', // STEP expression produces stepped results based on value pairs
-                ['get', 'Years-Livd'], // GET expression retrieves property value from 'capacity' data field
-                '#c6cbf8', // Colour assigned to any values < first step
-                2, '#4f57f8', // Colours assigned to values >= each step
-                6, '#1e00ff',
-            ],
-            'fill-opacity': 0.9,
-            'fill-outline-color': 'white'
-        },
-    });
 
+document.getElementById('exp-button').addEventListener('click', function () {
+    // Back to the first coordinate.
+    if (idx >= arrayOfCoordinates.length) {
+        idx = 0;
+    }
+    document.getElementById('active-exp').innerText = Name; // update html text with year constant
+
+    idx++;
 });
+
+
+
+
+// Add event listener which allows the sute user to zoom to the full extent at any time
+// document.getElementById("fullextent-button").addEventListener('click', () => {
+//     map.flyTo({
+//         center: [-93.42314489540314,
+//             39.25359819924685],
+//         zoom: 4,
+//         essential: true
+//     });
+// });
+
+//Adding data for state/province polygon layer
+// map.on('load', () => {
+//     map.addSource('prov-state', {
+//         'type': 'geojson',
+//         'data': 'https://raw.githubusercontent.com/charlbkg/GGR472Lab3/main/state-prov.geojson'
+//     }
+//     );
+//     // Add a layer showing the provinces/states I've lived in
+//     // Added a stepped expression to classify based on number of years I lived there
+//     map.addLayer({
+//         'id': 'prov-state',
+//         'type': 'fill',
+//         'source': 'prov-state',
+//         'minzoom': 0, //set zoom levels so these layers only appear at a zoomed out extent
+//         'maxzoom': 7, //this removes the layer when looking at individual points
+//         'paint': {
+//             'fill-color': [
+//                 'step', // STEP expression produces stepped results based on value pairs
+//                 ['get', 'Years-Livd'], // GET expression retrieves property value from 'capacity' data field
+//                 '#c6cbf8', // Colour assigned to any values < first step
+//                 2, '#4f57f8', // Colours assigned to values >= each step
+//                 6, '#1e00ff',
+//             ],
+//             'fill-opacity': 0.9,
+//             'fill-outline-color': 'white'
+//         },
+//     });
+
+// });
