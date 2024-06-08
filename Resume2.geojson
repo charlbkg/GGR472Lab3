@@ -6,7 +6,7 @@
             "properties": {
                 "Name": "Somerville High School",
                 "ExperienceType": "Education",
-                "Description": "- University-prep courses alongside enrollment in the vocational culinary-arts program",
+                "Description": "<li> University-prep courses alongside enrollment in the vocational culinary-arts program</li>",
                 "Year": "2015-2019"
             },
             "geometry": {
@@ -55,7 +55,7 @@
             "properties": {
                 "Name": "Intern: Farmers To You",
                 "ExperienceType": "Job",
-                "Description": "<li> Recipe development and food blogging with locally sourced farm-to-table ingredients</li>",
+                "Description": "<li> Recipe development and food blogging with locally sourced farm-to-table ingredients</li><li>Development of online outreach and interaction</li>",
                 "Year": "2019"
             },
             "geometry": {
