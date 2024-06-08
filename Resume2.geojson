@@ -4,7 +4,7 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Somerville High School",
+                "Name": "Somerville High School (Hover over experiences on the map for more info!)",
                 "ExperienceType": "Education",
                 "Description": "<li> University-prep courses alongside enrollment in the vocational culinary-arts program</li>",
                 "Year": "2015-2019"
