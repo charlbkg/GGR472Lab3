@@ -55,8 +55,7 @@
             "properties": {
                 "Name": "Intern: Farmers To You",
                 "ExperienceType": "Job",
-                "Description": "-Recipe development and food blogging with locally sourced farm-to-table ingredients",
-                "Description2": "-Development of online outreach and interaction",
+                "Description": "<p>-Recipe development and food blogging with locally sourced farm-to-table ingredients</p><p>-Development of online outreach and interaction</p>",
                 "Year": "2019"
             },
             "geometry": {
