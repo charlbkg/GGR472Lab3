@@ -23,7 +23,7 @@
             "properties": {
                 "Name": "Lab Assistant: Tufts University BioSeq Lab",
                 "ExperienceType": "Job",
-                "Description": "- Research and design experiments relating to bioinformatics and next-generation sequencing",
+                "Description": "<li> Research and design experiments relating to bioinformatics and next-generation sequencing</li>",
                 "Year": "2017-2018"
             },
             "geometry": {
@@ -39,7 +39,7 @@
             "properties": {
                 "Name": "Prep Cook: Sarma",
                 "ExperienceType": "Job",
-                "Description": "-Operate as a team member in the professional kitchen environment in one of Boston’s top fine-dining restaurants",
+                "Description": "<li>Operate as a team member in the professional kitchen environment in one of Boston’s top fine-dining restaurants</li>",
                 "Year": "2018-2019"
             },
             "geometry": {
@@ -88,7 +88,7 @@
             "properties": {
                 "Name": "Political Canvassing: CADC",
                 "ExperienceType": "Job",
-                "Description": "- Data collection and political canvassing in relation to the November 2020 presidential and senatorial election",
+                "Description": "<li> Data collection and political canvassing in relation to the November 2020 presidential and senatorial election</li>",
                 "Year": 2020
             },
             "geometry": {
@@ -105,7 +105,7 @@
                 "Name": "Volunteer Community Fridges Toronto",
                 "ExperienceType": "Volunteer",
                 "Year": 2021,
-                "Description": "- Weekly fridge cleaning and maintenance"
+                "Description": "<li> Weekly fridge cleaning and maintenance</li>"
             },
             "geometry": {
                 "coordinates": [
@@ -120,7 +120,7 @@
             "properties": {
                 "Name": "Barista: Goldstruck",
                 "ExperienceType": "Job",
-                "Description": "- Produce high quality, consistent food and drinks while maintaining customer service",
+                "Description": "<li> Produce high quality, consistent food and drinks while maintaining customer service</li>",
                 "Year": "2021-2022"
             },
             "geometry": {
@@ -136,9 +136,7 @@
             "properties": {
                 "Name": "Organizer: UofT Emergency Food Bank",
                 "ExperienceType": "Volunteer",
-                "Description": "- Aid in supplying UofT community through partnership with FoodShare TO",
-                "Description2": "- Work with task group to develop advocacy and community involvement initiatives",
-                "Description3": "- Represent the Food Bank at the Ryerson Institute for Change Leaders Advocacy and Campaign course",
+                "Description": "<li> Aid in supplying UofT community through partnership with FoodShare TO</li><li> Work with task group to develop advocacy and community involvement initiatives</li><li> Represent the Food Bank at the Ryerson Institute for Change Leaders Advocacy and Campaign course</li>",
                 "Year": "2021-2022"
             },
             "geometry": {
@@ -154,7 +152,7 @@
             "properties": {
                 "Name": "Volunteer: BikeChain UofT",
                 "ExperienceType": "Volunteer",
-                "Description": "- Learn bicycle repair and maintenance while supporting the student community ",
+                "Description": "<li> Learn bicycle repair and maintenance while supporting the student community </li>",
                 "Year": "2021-Present"
             },
             "geometry": {
@@ -169,8 +167,7 @@
             "type": "Feature",
             "properties": {
                 "ExperienceType": "Job",
-                "Description": "- Background research and data collection supporting political economy research on organic wine production, wine cooperatives in Southern France, and the progression of EU wine and agricultural policies.",
-                "Description2": "- Production of chronologies, annotated bibliographies, and databases.",
+                "Description": "<li> Background research and data collection supporting political economy research on organic wine production, wine cooperatives in Southern France, and the progression of EU wine and agricultural policies</li><li> Production of chronologies, annotated bibliographies, and databases</li>",
                 "Name": "Research Assistant: Scott Prudham (Department of Geography)",
                 "Year": 2022
             },
@@ -187,7 +184,7 @@
             "properties": {
                 "Name": "Line Cook / Barista: Rustle and Still",
                 "ExperienceType": "Job",
-                "Description": "-Work efficiently and collaboratively in a fast paced, high output kitchen environment",
+                "Description": "<li>Work efficiently and collaboratively in a fast paced, high output kitchen environment</li>",
                 "Year": "2022-Present"
             },
             "geometry": {
@@ -203,7 +200,7 @@
             "properties": {
                 "Name": "Tutor: Geographic Information Systems",
                 "ExperienceType": "Job",
-                "Description": "- In-person tutoring and production of instructional documents for the Seneca College course: Geospatial Data Collection, Analysis & Interpretation using GIS Technology",
+                "Description": "<li> In-person tutoring and production of instructional documents for the Seneca College course: Geospatial Data Collection, Analysis & Interpretation using GIS Technology</li>",
                 "Year": "2023-Present"
             },
             "geometry": {
@@ -219,8 +216,7 @@
             "properties": {
                 "Name": "ESRI Canada Student Associate",
                 "ExperienceType": "Education",
-                "Description": "- Publish GIS-focused writing pieces on the ESRI Canada site",
-                "Description2": "- Participate in national application design challenge",
+                "Description": "<li> Publish GIS-focused writing pieces on the ESRI Canada site</li><li> Participate in national application design challenge</li>",
                 "Year": "2023-Present"
             },
             "geometry": {
@@ -236,10 +232,7 @@
             "properties": {
                 "Name": "Research Assistant: Urban Genome Project",
                 "ExperienceType": "Job",
-                "Description": "- Work-study position through The Daniels Faculty of Architecture at the University of Toronto.",
-                "Description2": "- Mixed-method sociological research on invasive species management and conceptualization at the municipal level.",
-                "Description3": "-Computational text analysis (word embeddings) exploring how shared conceptualizations are developed in government.",
-                "Description4": "- Third author on manuscript currently under review",
+                "Description": "<li> Work-study position through The Daniels Faculty of Architecture at the University of Toronto</li><li> Third author on manuscript currently under review</li><li> Mixed-method sociological research on invasive species management and conceptualization at the municipal level</li><li> Computational text analysis (word embeddings) exploring how shared conceptualizations are developed in government</li><li>",
                 "Year": "2023-Present"
             },
             "geometry": {
